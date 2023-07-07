@@ -29,9 +29,9 @@ function SideMenu () {
         </li>
         <li className='my-8'>
           <div className='flex gap-1'>
-            <Image src={PracticesLogo} alt='Logotype of the company' className='w-6 h-6 mx-2' />
+            <Image src={PracticesLogo} alt='Logotype of the company' className='w-6 h-6 mx-2 cursor-pointer' onClick={() => setMenuIsOpen(!menuIsOpen)} />
             <Collapsible>
-              <CollapsibleTrigger>PROVIDERS</CollapsibleTrigger>
+              <CollapsibleTrigger className={`${menuIsOpen ? '' : 'hidden'}`}>PROVIDERS</CollapsibleTrigger>
               <CollapsibleContent>
                 <ul className='flex flex-col gap-2 text-xs pl-5 pt-2'>
                   <li onClick={() => setMenuIsOpen(!menuIsOpen)}>
