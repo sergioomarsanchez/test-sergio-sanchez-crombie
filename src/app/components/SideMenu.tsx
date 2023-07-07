@@ -15,11 +15,11 @@ function SideMenu () {
   const [menuIsOpen, setMenuIsOpen] = useState<Boolean>(true)
   return (
     <nav className={`h-screen w-20 ${menuIsOpen ? 'w-60' : 'w-20'} fixed left-0 bg-navBar-00 flex flex-col gap-10 justify-start items-center pt-5 pb-8`}>
-      <div className='h-20'>
+      <div className='h-10 xl:h-20'>
         <Image src={menuIsOpen ? Logo : LogoSmall} alt='Logotype of the company' className={`${menuIsOpen ? 'p-5' : 'p-1 mt-5'}`} />
       </div>
       <ul>
-        <li onClick={() => setMenuIsOpen(!menuIsOpen)} className='my-8'>
+        <li onClick={() => setMenuIsOpen(!menuIsOpen)} className='my-2 xl:my-8 md:text-sm'>
           <Link href='/' passHref className='flex gap-1'>
             <Image src={PracticesLogo} alt='Logotype of the company' className='w-6 mx-2' />
             <span className={`${menuIsOpen ? '' : 'hidden'}`}>
@@ -27,7 +27,7 @@ function SideMenu () {
             </span>
           </Link>
         </li>
-        <li className='my-8'>
+        <li className='my-2 xl:my-8 md:text-sm'>
           <div className='flex gap-1'>
             <Image src={PracticesLogo} alt='Logotype of the company' className='w-6 h-6 mx-2 cursor-pointer' onClick={() => setMenuIsOpen(!menuIsOpen)} />
             <Collapsible>
@@ -64,7 +64,7 @@ function SideMenu () {
 
           </div>
         </li>
-        <li onClick={() => setMenuIsOpen(!menuIsOpen)} className='my-8'>
+        <li onClick={() => setMenuIsOpen(!menuIsOpen)} className='my-2 xl:my-8 md:text-sm'>
           <Link href='/Search' passHref className='flex gap-1'>
             <Image src={PracticesLogo} alt='Logotype of the company' className='w-6 mx-2' />
             <span className={`${menuIsOpen ? '' : 'hidden'}`}>
@@ -72,7 +72,7 @@ function SideMenu () {
             </span>
           </Link>
         </li>
-        <li onClick={() => setMenuIsOpen(!menuIsOpen)} className='my-8'>
+        <li onClick={() => setMenuIsOpen(!menuIsOpen)} className='my-2 xl:my-8 md:text-sm'>
           <Link href='/' passHref className='flex gap-1'>
             <Image src={PracticesLogo} alt='Logotype of the company' className='w-6 mx-2' />
             <span className={`${menuIsOpen ? '' : 'hidden'}`}>
@@ -80,7 +80,7 @@ function SideMenu () {
             </span>
           </Link>
         </li>
-        <li onClick={() => setMenuIsOpen(!menuIsOpen)} className='my-8'>
+        <li onClick={() => setMenuIsOpen(!menuIsOpen)} className='my-2 xl:my-8 md:text-sm'>
           <Link href='/' passHref className='flex gap-1'>
             <Image src={PracticesLogo} alt='Logotype of the company' className='w-6 mx-2' />
             <span className={`${menuIsOpen ? '' : 'hidden'}`}>
@@ -88,7 +88,7 @@ function SideMenu () {
             </span>
           </Link>
         </li>
-        <li onClick={() => setMenuIsOpen(!menuIsOpen)} className='my-8'>
+        <li onClick={() => setMenuIsOpen(!menuIsOpen)} className='my-2 xl:my-8 md:text-sm'>
           <Link href='/' passHref className='flex gap-1'>
             <Image src={PracticesLogo} alt='Logotype of the company' className='w-6 mx-2' />
             <span className={`${menuIsOpen ? '' : 'hidden'}`}>
@@ -96,7 +96,7 @@ function SideMenu () {
             </span>
           </Link>
         </li>
-        <li onClick={() => setMenuIsOpen(!menuIsOpen)} className='my-8'>
+        <li onClick={() => setMenuIsOpen(!menuIsOpen)} className='my-2 xl:my-8 md:text-sm'>
           <Link href='/' passHref className='flex gap-1'>
             <Image src={PracticesLogo} alt='Logotype of the company' className='w-6 mx-2' />
             <span className={`${menuIsOpen ? '' : 'hidden'}`}>
@@ -104,7 +104,7 @@ function SideMenu () {
             </span>
           </Link>
         </li>
-        <li onClick={() => setMenuIsOpen(!menuIsOpen)} className='my-8'>
+        <li onClick={() => setMenuIsOpen(!menuIsOpen)} className='my-2 xl:my-8 md:text-sm'>
           <Link href='/' passHref className='flex gap-1'>
             <Image src={PracticesLogo} alt='Logotype of the company' className='w-6 mx-2' />
             <span className={`${menuIsOpen ? '' : 'hidden'}`}>
@@ -113,8 +113,8 @@ function SideMenu () {
           </Link>
         </li>
       </ul>
-      <ul className='mt-24 pr-10'>
-        <li onClick={() => setMenuIsOpen(!menuIsOpen)} className='my-8'>
+      <ul className={`${menuIsOpen ? 'pr-10' : 'pr-0'} mt-10 xl:mt-24`}>
+        <li onClick={() => setMenuIsOpen(!menuIsOpen)} className='my-2 xl:my-8 md:text-sm'>
           <Link href='/' passHref className='flex gap-1'>
             <Image src={PracticesLogo} alt='Logotype of the company' className='w-6 mx-2' />
             <span className={`${menuIsOpen ? '' : 'hidden'}`}>
@@ -122,7 +122,7 @@ function SideMenu () {
             </span>
           </Link>
         </li>
-        <li onClick={() => setMenuIsOpen(!menuIsOpen)} className='my-8'>
+        <li onClick={() => setMenuIsOpen(!menuIsOpen)} className='my-2 xl:my-8 md:text-sm'>
           <Link href='/' passHref className='flex gap-1'>
             <Image src={PracticesLogo} alt='Logotype of the company' className='w-6 mx-2' />
             <span className={`${menuIsOpen ? '' : 'hidden'}`}>
