@@ -30,7 +30,7 @@ export default function SearchBar ({ data } : { data: Data }) {
   }
 
   return (
-    <div className='text-black'>
+    <div className='text-black pt-5'>
       <p className='title'>Practices</p>
       <div className='search-container'>
         <input
