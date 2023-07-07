@@ -32,7 +32,7 @@ function SideMenu () {
             <Image src={PracticesLogo} alt='Logotype of the company' className='w-6 h-6 mx-2 cursor-pointer' onClick={() => setMenuIsOpen(!menuIsOpen)} />
             <Collapsible>
               <CollapsibleTrigger className={`${menuIsOpen ? '' : 'hidden'}`}>PROVIDERS</CollapsibleTrigger>
-              <CollapsibleContent>
+              <CollapsibleContent className={`${menuIsOpen ? '' : 'hidden'}`}>
                 <ul className='flex flex-col gap-2 text-xs pl-5 pt-2'>
                   <li onClick={() => setMenuIsOpen(!menuIsOpen)}>
                     Dashboard
