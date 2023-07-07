@@ -14,7 +14,7 @@ import {
 function SideMenu () {
   const [menuIsOpen, setMenuIsOpen] = useState<Boolean>(true)
   return (
-    <nav className={`h-screen w-20 ${menuIsOpen ? 'w-60' : 'w-20'} fixed left-0 bg-navBar-00 flex flex-col gap-10 justify-start items-center pt-5`}>
+    <nav className={`h-screen w-20 ${menuIsOpen ? 'w-60' : 'w-20'} fixed left-0 bg-navBar-00 flex flex-col gap-10 justify-start items-center pt-5 pb-8`}>
       <div className='h-20'>
         <Image src={menuIsOpen ? Logo : LogoSmall} alt='Logotype of the company' className={`${menuIsOpen ? 'p-5' : 'p-1 mt-5'}`} />
       </div>
