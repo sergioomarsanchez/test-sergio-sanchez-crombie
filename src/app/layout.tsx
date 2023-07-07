@@ -1,8 +1,6 @@
 import './globals.css'
 import React from 'react'
-import { Inter } from 'next/font/google'
-
-const inter = Inter({ subsets: ['latin'] })
+import SideMenu from './components/SideMenu'
 
 export const metadata = {
   title: 'Create Next App',
@@ -15,8 +13,11 @@ export default function RootLayout ({
   children: React.ReactNode
 }) {
   return (
-    <html lang='en'>
-      <body className={inter.className}>{children}</body>
+    <html lang='en' className='bg-slate-200'>
+      <body className='flex bg-slate-200'>
+        <SideMenu />
+        {children}
+      </body>
     </html>
   )
 }

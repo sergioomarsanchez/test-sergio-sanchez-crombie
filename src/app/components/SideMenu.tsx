@@ -1,15 +1,20 @@
 'use client'
 import React, { useState } from 'react'
+import Link from 'next/link'
 
 function SideMenu () {
-  // eslint-disable-next-line no-unused-vars
-  const [isOpen, setIsOpen] = useState<Boolean>(true)
+  const [menuIsOpen, setMenuIsOpen] = useState<Boolean>(true)
   return (
-    <div className={`h-screen w-20 ${isOpen ? 'w-40' : 'w-20'} bg-red-500`}>
-      <span onClick={() => setIsOpen(false)}>X</span>
-      <div>Soy el menú carajo donde estoy?
-      </div>
-    </div>
+    <nav className={`h-screen w-20 ${menuIsOpen ? 'w-40' : 'w-20'} fixed left-0 bg-blue-500`}>
+      <span onClick={() => setMenuIsOpen(!menuIsOpen)}>X</span>
+      <ul>
+        <li onClick={() => setMenuIsOpen(false)}>
+          <Link href='/Search' passHref>
+            Practices
+          </Link>
+        </li>
+      </ul>
+    </nav>
   )
 }
 
